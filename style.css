@@ -6,3 +6,18 @@ header {
   height: 150px;
   width: 80%;
 }
+
+.letters {
+  border: 3px solid black;
+  font-size: 75px;
+  text-align: center;
+  margin: 0 auto;
+  height: 100px;
+  width: 80%;
+}
+
+body {
+  background-image: url(https://wallimpex.com/data/out/288/mario-game-backgrounds-6675611.png);
+  background-size: 75%;
+  background-repeat: repeat;
+}
