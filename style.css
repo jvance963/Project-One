@@ -1,13 +1,15 @@
 header {
+  font-family: "ZCOOL KuaiLe", cursive;
   border: 3px solid black;
   font-size: 15px;
   text-align: center;
   margin: 0 auto;
-  height: 150px;
+  height: 425px;
   width: 80%;
 }
 
 .letters {
+  font-family: "ZCOOL KuaiLe", cursive;
   border: 3px solid black;
   font-size: 75px;
   text-align: center;
@@ -20,4 +22,13 @@ body {
   background-image: url(https://wallimpex.com/data/out/288/mario-game-backgrounds-6675611.png);
   background-size: 75%;
   background-repeat: repeat;
+}
+
+.bowser {
+  display: flex;
+  justify-content: center;
+}
+
+.luigi {
+  justify-content: flex-start;
 }
