@@ -1,7 +1,7 @@
 header {
-  font-family: "ZCOOL KuaiLe", cursive;
+  font-family: "Press Start 2P", cursive;
   border: 3px solid black;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   margin: 0 auto;
   height: 500px;
@@ -9,7 +9,7 @@ header {
 }
 
 .letters {
-  font-family: "ZCOOL KuaiLe", cursive;
+  font-family: "Press Start 2P", cursive;
   border: 3px solid black;
   font-size: 75px;
   margin: 0 auto;
@@ -40,13 +40,38 @@ body {
   position: absolute;
   bottom: 295px;
   right: 5px;
+  animation: bowser 5s infinite;
+}
+@keyframes bowser {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*https://css-tricks.com/making-css-animations-feel-natural/*/
+
+.stand {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  position: absolute;
+  bottom: 151px;
+  right: 50px;
 }
 
 .mario {
-  grid-row: 1 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 2 / span 1;
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 190px;
+  right: 640px;
 }
 
 .luigi {
@@ -55,8 +80,21 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 295px;
+  bottom: 285px;
   left: 50px;
+  animation: luigi 5s infinite;
+}
+
+@keyframes luigi {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .tunnel1 {
