@@ -47,7 +47,7 @@ body {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0px);
@@ -60,7 +60,7 @@ body {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
   position: absolute;
-  bottom: 151px;
+  bottom: 160px;
   right: 50px;
 }
 
@@ -70,8 +70,8 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 190px;
-  right: 640px;
+  top: 175px;
+  right: 635px;
 }
 
 .luigi {
@@ -87,13 +87,13 @@ body {
 
 @keyframes luigi {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
 }
 
