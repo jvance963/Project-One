@@ -11,7 +11,7 @@ header {
 .letters {
   font-family: "Press Start 2P", cursive;
   border: 3px solid black;
-  font-size: 75px;
+  font-size: 30px;
   margin: 0 auto;
   height: 50px;
   width: 50%;
@@ -28,13 +28,41 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wordBox {
+  font-family: "Press Start 2P", cursive;
+  font-size: auto;
+  position: absolute;
+  bottom: 425px;
+  right: 450px;
+}
+
+.submit {
+  font-family: "Press Start 2P", cursive;
+  font-size: auto;
+  position: absolute;
+  bottom: 400px;
+  right: 490px;
+}
+
+.keyboard {
+  font-family: "Press Start 2P", cursive;
+  font-size: auto;
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: center;
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .bowser {
   grid-row: 1 / span 1;
-  grid-column: 3 / span 1;
+  grid-column: 4 / span 1;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -61,7 +89,7 @@ body {
   grid-column: 2 / span 1;
   position: absolute;
   bottom: 160px;
-  right: 50px;
+  right: 200px;
 }
 
 .mario {
@@ -71,7 +99,7 @@ body {
   justify-content: center;
   position: absolute;
   top: 175px;
-  right: 635px;
+  right: 785px;
 }
 
 .luigi {
