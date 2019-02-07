@@ -52,12 +52,12 @@ body {
   grid-row: 3 / span 1;
 }
 
-#letters a {
+#letters {
   color: black;
   cursor: pointer;
 }
 
-#letters a :hover {
+#letters :hover {
   color: red;
 }
 

@@ -9,21 +9,19 @@ let newWord = document.querySelector(".newWord");
 
 newWord.addEventListener("click", function() {
   word = prompt("Please enter a new word!");
-  console.log("word>", word);
+  console.log(word);
 
-  alert("hey");
+  //create uderscores based on length of the word that is typed into the box
   let underScore = "_";
   console.log(underScore);
 
-  for (let i = 0; i < 7; i++) {
+  for (let i = 1; i < word.length; i++) {
     underScore += "_";
   }
 
   text1.innerText = underScore;
   console.log(text1.innerHTML);
 });
-
-//create uderscores based on length of the word that is typed into the box
 
 // guess = setGuess(word);
 console.log("guess", guess);
