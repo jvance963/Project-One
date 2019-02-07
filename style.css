@@ -32,25 +32,17 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.wordBox {
+.newWord {
   font-family: "Press Start 2P", cursive;
   font-size: auto;
   position: absolute;
   bottom: 425px;
-  right: 450px;
-}
-
-.submit {
-  font-family: "Press Start 2P", cursive;
-  font-size: auto;
-  position: absolute;
-  bottom: 400px;
   right: 490px;
 }
 
 .keyboard {
   font-family: "Press Start 2P", cursive;
-  font-size: auto;
+  font-size: 22px;
   border: 3px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +50,15 @@ body {
   justify-content: center;
   grid-column: 3 / span 1;
   grid-row: 3 / span 1;
+}
+
+#letters a {
+  color: black;
+  cursor: pointer;
+}
+
+#letters a :hover {
+  color: red;
 }
 
 .bowser {

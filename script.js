@@ -1,32 +1,56 @@
+let word = "";
+
+let newWord = document.querySelector(".newWord");
+newWord.addEventListener("click", function() {
+  word = prompt("Pleasse enter a word");
+  //   console.log(word.length);
+
+  let underscore = [];
+  for (let i = 0; i < word.length; i++) {
+    underscore.push("_");
+  }
+  console.log(underscore);
+});
+
+//when "new word" button is clicked then a prompt for user input is initiated.
+
 //create function to generate of words but would like to be able to type any word in the dictionary
 
-const word = ["mushroom", "yoshi", "princess", "bowser"];
+//const word = ["mushroom", "yoshi", "princess", "bowser"];
 
-let randNum = Math.floor(Math.random() * word.length);
-let newWord = word[randNum];
+//let randNum = Math.floor(Math.random() * word.length);
+//let newWord = word[randNum];
 
-let docUnderScore = document.getElementsByClassName("underscore");
+//let docUnderScore = document.getElementsByClassName("underscore");
 
-console.log(newWord);
+//console.log(newWord);
+
+// function newWord() {
+//   var input = document.getElementById("userInput");
+//   alert(input);
+// }
 
 //create uderscores based on length of the word that is typed into the box
 
-let assignunderScore = () => {
-  for (let i = 0; i < newWord.length; i++) {
-    underScore.push["_"];
-  }
-  return underScore;
-};
+// let assignunderScore = () => {
+//   for (let i = 0; i < input.length; i++) {
+//     assignunderScore.push["_"];
+//   }
+//   return assignunderScore;
+// };
 
-console.log(assignunderScore());
+// console.log(assignunderScore());
+
+var newButton = document.getElementById("newwordbutton");
+// console.log(newButton);
+
+//user is able to click button on keyboard for the guess
+
+//make buttons on keyboard only able to pressed once
 
 // Make bowser jump when user does not guess word correctly because Mario died
 
 // Make Luigi jump when user does guess word correctly because Mario was saved
-
-function jumpHigh() {
-  var luigi = luigi;
-}
 
 //if user guesses the correct word then an alert box appears and says "Your answer is correct"
 
