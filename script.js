@@ -4,9 +4,6 @@ const word = ["mushroom", "yoshi", "princess", "bowser"];
 
 let randNum = Math.floor(Math.random() * word.length);
 let newWord = word[randNum];
-let rightWord = [];
-let wrongWord = [];
-let underScore = [];
 
 let docUnderScore = document.getElementsByClassName("underscore");
 
