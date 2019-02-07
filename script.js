@@ -1,9 +1,13 @@
+//create function to generate of words but would like to be able to type any word in the dictionary
 let word = "";
+
+//when "new word" button is clicked then a prompt for user input is initiated.
 
 let newWord = document.querySelector(".newWord");
 newWord.addEventListener("click", function() {
-  word = prompt("Pleasse enter a word");
-  //   console.log(word.length);
+  word = prompt("Please enter a new word!");
+
+  //create uderscores based on length of the word that is typed into the box
 
   let underscore = [];
   for (let i = 0; i < word.length; i++) {
@@ -11,38 +15,6 @@ newWord.addEventListener("click", function() {
   }
   console.log(underscore);
 });
-
-//when "new word" button is clicked then a prompt for user input is initiated.
-
-//create function to generate of words but would like to be able to type any word in the dictionary
-
-//const word = ["mushroom", "yoshi", "princess", "bowser"];
-
-//let randNum = Math.floor(Math.random() * word.length);
-//let newWord = word[randNum];
-
-//let docUnderScore = document.getElementsByClassName("underscore");
-
-//console.log(newWord);
-
-// function newWord() {
-//   var input = document.getElementById("userInput");
-//   alert(input);
-// }
-
-//create uderscores based on length of the word that is typed into the box
-
-// let assignunderScore = () => {
-//   for (let i = 0; i < input.length; i++) {
-//     assignunderScore.push["_"];
-//   }
-//   return assignunderScore;
-// };
-
-// console.log(assignunderScore());
-
-var newButton = document.getElementById("newwordbutton");
-// console.log(newButton);
 
 //user is able to click button on keyboard for the guess
 
