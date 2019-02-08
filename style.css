@@ -22,7 +22,7 @@ header {
 }
 
 body {
-  background-image: url(/Users/jvancehomefolder/desktop/hangman-images/Mario-Background.png);
+  background-image: url(./imgs/Mario-Background.png);
   background-size: 80%;
   background-repeat: repeat;
   z-index: -1;
