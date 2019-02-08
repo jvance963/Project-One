@@ -1,7 +1,7 @@
 //create function to generate of words but would like to be able to type any word in the dictionary
 let word = "";
 let guess = "";
-var text1 = document.querySelector(".letters");
+var text1 = document.querySelector(".underscore");
 
 //when "new word" button is clicked then a prompt for user input is initiated.
 
@@ -16,33 +16,46 @@ newWord.addEventListener("click", function() {
   console.log(underScore);
 
   for (let i = 1; i < word.length; i++) {
-    underScore += "_";
+    underScore += " " + "_" + " ";
   }
-
   text1.innerText = underScore;
   console.log(text1.innerHTML);
 });
 
 // guess = setGuess(word);
-console.log("guess", guess);
+//console.log("guess", guess);
 // console.log(guess.length);
 //});
 
-// when a user inputs a word (with prompt), make userGuess an equal length with underscores
-//function setGuess(userInput)
+//user is able to click button on keyboard for the guess
 
-// let underScore = "";
-// for (let i = 0; i < word.length; i++) {
-//   underScore += "_";
-// }
-
-//return underscores;
+// //document.querySelector(".letters");
+// letterA.addEventListener("click", function(event) {
+//   //console.log(letters.value);
+//   document.querySelector(".letters").disabled = true;
+// });
 
 //Getting guess from the player and ensuring that it is a single character
 
-//user is able to click button on keyboard for the guess
+// let guessArray = new Array(wordArray.length);
+// for (let i = 1; i < wordArray.length; i++) {
+//   if (word === wordArray[i]) {
+//     guessArray[i] = word;
+//     console.log(word);
+//   }
+// }
 
 //make buttons on keyboard only able to pressed once
+
+var checkLetter = function(letterA) {
+  console.log(letterA);
+};
+
+const letterA = document.getElementById("A");
+
+letterA.addEventListener("click", function(event) {
+  console.log("test");
+});
 
 // Make bowser jump when user does not guess word correctly because Mario died
 
@@ -50,7 +63,7 @@ console.log("guess", guess);
 
 //if user guesses the correct word then an alert box appears and says "Your answer is correct"
 
-//if user guesses the incorrect answer then an alert box appears and says "Your answee is incorrect"
+//if user guesses the incorrect answer then an alert box appears and says "Your answer is incorrect"
 
 // if user does not guess correctly then head appears
 

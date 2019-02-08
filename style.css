@@ -11,19 +11,21 @@ header {
 .letters {
   font-family: "Press Start 2P", cursive;
   border: 3px solid black;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0 auto;
-  height: 50px;
+  height: 80px;
   width: 50%;
   display: flex;
-  align-content: auto;
+  align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 body {
   background-image: url(/Users/jvancehomefolder/desktop/hangman-images/Mario-Background.png);
   background-size: 80%;
   background-repeat: repeat;
+  z-index: -1;
 }
 
 .container {
@@ -36,29 +38,43 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: auto;
   position: absolute;
-  bottom: 425px;
-  right: 490px;
-}
-
-.keyboard {
-  font-family: "Press Start 2P", cursive;
-  font-size: 22px;
-  border: 3px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  justify-content: center;
-  grid-column: 3 / span 1;
-  grid-row: 3 / span 1;
+  bottom: 100px;
+  right: 610px;
 }
 
 #letters {
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  border: 3px solid black;
+  position: absolute;
+  height: 85px;
+  width: 550px;
+  right: 0.2%;
+  bottom: 10%;
   color: black;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#letters :hover {
+#letters a:hover {
   color: red;
+}
+
+.underscore {
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  border: 3px solid black;
+  height: 85px;
+  width: 50%;
+  position: absolute;
+  right: 49%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bowser {
@@ -90,7 +106,7 @@ body {
   grid-column: 2 / span 1;
   position: absolute;
   bottom: 160px;
-  right: 200px;
+  right: 100px;
 }
 
 .mario {
@@ -100,7 +116,7 @@ body {
   justify-content: center;
   position: absolute;
   top: 175px;
-  right: 785px;
+  right: 680px;
 }
 
 .luigi {

@@ -5,96 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
     <title>Hangman</title>
   </head>
 
-  <body>
+  <body></body>
 
-    
-  </body>
-
-    <header>
-      <h2>Super Mario Hangman</h2>
+  <header>
+    <h2>Super Mario Hangman</h2>
 
     <div class="container">
-
-        <div class="keyboard">
-        <div id="letters">
-        <a id="A">A</a>
-        <a id="B">B</a>
-        <a id="C">C</a>
-        <a id="D">D</a>
-        <a id="E">E</a>
-        <a id="F">F</a>
-        <a id="G">G</a>
-        <a id="H">H</a>
-      <div>
-        <a id="I">I</a>
-        <a id="J">J</a>
-        <a id="K">K</a>
-        <a id="L">L</a>
-        <a id="M">M</a>
-        <a id="N">N</a>
-        <a id="O">O</a>
+      <div class="bowser">
+        <img
+          src="/Users/jvancehomefolder/desktop/hangman-images/Bowser.png "
+          alt="bowser"
+        />
       </div>
-      <div>
-        <a id="P">P</a>
-        <a id="Q">Q</a>
-        <a id="R">R</a>
-        <a id="S">S</a>
-        <a id="T">T</a>
-        <a id="U">U</a>
-        </div>
-
-        <div>
-        <a id="V">V</a>
-        <a id="W">W</a>
-        <a id="X">X</a>
-        <a id="Y">Y</a>
-        <a id="Z">Z</a>
-        </div>
-      </div>
-
-    <div class="bowser">
-        <img src="/Users/jvancehomefolder/desktop/hangman-images/Bowser.png " alt="bowser"/>
-    </div>
       <!-- <br> -->
-      
+
       <div class="mario">
-          <img src="/Users/jvancehomefolder/desktop/hangman-images/mario.png" alt="mario">
+        <img
+          src="/Users/jvancehomefolder/desktop/hangman-images/mario-figure.png"
+          alt="mario"
+        />
       </div>
 
-      
-      
-    <div class="stand">
-        <img src="/Users/jvancehomefolder/desktop/hangman-images/Hangman-Stand.png" />
+      <div class="stand">
+        <img
+          src="/Users/jvancehomefolder/desktop/hangman-images/Hangman-Stand.png"
+        />
+      </div>
+
+      <div class="tunnel1">
+        <img src="/Users/jvancehomefolder/desktop/hangman-images/tunnel.png" />
+      </div>
+
+      <div class="luigi">
+        <div class="luigi-bounce">
+          <img
+            src="/Users/jvancehomefolder/desktop/hangman-images/luigi.png"
+            alt="luigi"
+          />
+        </div>
+      </div>
+
+      <div class="tunnel2">
+        <img src="/Users/jvancehomefolder/desktop/hangman-images/tunnel.png" />
+      </div>
+    </div>
+  </header>
+
+  <div class="newWord">
+    <button type="button">Click Me!</button>
+  </div>
+  <br />
+  <div class="underscore">_ _ _ _ _</div>
+
+  <div id="letters">
+    <div>
+      <a id="A" onclick="checkLetter('A')">A</a>
+      <a id="B" onclick="checkLetter('B')">B</a>
+      <a id="C" onclick="checkLetter('C')">C</a>
+      <a id="D" onclick="checkLetter('D')">D</a>
+      <a id="E" onclick="checkLetter('E')">E</a>
+      <a id="F" onclick="checkLetter('F')">F</a>
+      <a id="G" onclick="checkLetter('G')">G</a>
+      <a id="H" onclick="checkLetter('H')">H</a>
     </div>
 
-<div class="tunnel1">
-    <img src="/Users/jvancehomefolder/desktop/hangman-images/tunnel.png"/>
-</div>
-
-<div class="luigi">
-    <div class="luigi-bounce">
-    <img src="/Users/jvancehomefolder/desktop/hangman-images/luigi.png" alt="luigi">
-</div>
-</div>
-
-<div class="tunnel2">
-    <img src="/Users/jvancehomefolder/desktop/hangman-images/tunnel.png" />
-</div>
-
-</div>
-    </header>
-
-    <div class="newWord">
-      <button type="button">Click Me!</button>
+    <div>
+      <a id="I" onclick="checkLetter('I')">I</a>
+      <a id="J" onclick="checkLetter('J')">J</a>
+      <a id="K" onclick="checkLetter('K')">K</a>
+      <a id="L" onclick="checkLetter('L')">L</a>
+      <a id="M" onclick="checkLetter('M')">M</a>
+      <a id="N" onclick="checkLetter('N')">N</a>
+      <a id="O" onclick="checkLetter('O')">O</a>
     </div>
-    <br>
-    <div class="letters">_ _ _ _</div>
+
+    <div>
+      <a id="P" onclick="checkLetter('P')">P</a>
+      <a id="Q" onclick="checkLetter('Q')">Q</a>
+      <a id="R" onclick="checkLetter('R')">R</a>
+      <a id="S" onclick="checkLetter('S')">S</a>
+      <a id="T" onclick="checkLetter('T')">T</a>
+      <a id="U" onclick="checkLetter('U')">U</a>
+    </div>
+
+    <div>
+      <a id="V" onclick="checkLetter('V')">V</a>
+      <a id="W" onclick="checkLetter('W')">W</a>
+      <a id="X" onclick="checkLetter('X')">X</a>
+      <a id="Y" onclick="checkLetter('Y')">Y</a>
+      <a id="Z" onclick="checkLetter('Z')">Z</a>
+    </div>
   </div>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </html>
