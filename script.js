@@ -37,7 +37,10 @@ newWord.addEventListener("click", function() {
 
 //Getting guess from the player and ensuring that it is a single character
 
-// let guessArray = new Array(wordArray.length);
+var guess;
+var guessLetter;
+
+// let guessArray = guess(wordArray.length);
 // for (let i = 1; i < wordArray.length; i++) {
 //   if (word === wordArray[i]) {
 //     guessArray[i] = word;
@@ -47,14 +50,14 @@ newWord.addEventListener("click", function() {
 
 //make buttons on keyboard only able to pressed once
 
-var checkLetter = function(letterA) {
-  console.log(letterA);
+var checkLetter = function(letters) {
+  console.log(letters);
 };
 
-const letterA = document.getElementById("A");
+const letters = document.getElementById("letters");
 
-letterA.addEventListener("click", function(event) {
-  console.log("test");
+letters.addEventListener("click", function(event) {
+  //console.log("test");
 });
 
 // Make bowser jump when user does not guess word correctly because Mario died
