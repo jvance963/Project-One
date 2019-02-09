@@ -69,7 +69,7 @@ for (let i = 0; i < letters.length; i++) {
 
     if (counter === 3) {
       document.getElementById("left-arm").innerHTML =
-        "<img src='./imgs/left-Arm.png' />";
+        "<img src='./imgs/left-arm.png' />";
     }
 
     if (counter === 4) {
