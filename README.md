@@ -4,7 +4,14 @@ Description
 
 This project is an iteration of a hangman game in which one would submit a word for another user to guess and then with each wrong answer a figure would appear to signal "Game Over." However, I wanted to specifically build this game themed for kids but mainly mine as he is obsessed with Super Mario. He enjoys hangman on paper, so I thought this would be great for him to interact with in hopes that it could just be a fun game for him to play.
 
-My project solves the problem of making normal hangman on paper a little more enjoyable and something that is geared towards a younger audience. 
+My project solves the problem of making normal hangman on paper a little more enjoyable and something that is geared towards a younger audience. In hangman the word to guess is represented by a row of dashes, representing each letter of the word. 
+In most variants, proper nouns, such as names, places, and brands, are not allowed whereas here you can use any word you want.
+If the guessing player suggests a letter which occurs in the word, the other player writes it in all its correct positions. 
+If the suggested letter or number does not occur in the word, the other player draws one element of a hanged man stick figure as a tally mark.
+
+The player guessing the word may, at any time, attempt to guess letters in the world by clicking on the make-shift keyboard in the bottome right corner. The buttons will turn red once you hover over them.  
+You have 6 attempts to guess the word by clicking on the letters and as you click the wrong letters mario will begin to appear and if you answer correctly then the left box with underscores will be filled with the users correct guess. 
+If the word is correct, the game is over and the guesser wins. 
 
 User Stories and Features
 
@@ -38,6 +45,15 @@ Setting up the game (each hyphen represents a step)
 - choose a them
 - after game and theme were created then I began my wireframming for the game in which I would design where the characters would go and be set up. 
 - Once this was created and I had my ideas on paper I began building out my HTML in VS Code. I knew that I would be wrapping everything in <div> tags both as a whole and individually. 
+ - I began the <div> tags in with the images, and then I moved onto the letters and then moving onto id's for the parts of mario so I could used getElementByID in my JS.
+ - After properly executed the build out of the HTML, I moved onto my CSS.
+ - Once moving on to the CSS I focused primarily on placing all my images in their proper position.
+ - finding that flexbox would not work for the exact specification that I wanted/needed I rendered my pictures as "absolute" and positioned the height and width individually. 
+ - Once positioned to my proper specification I was able to then focus on my CSS animation which allowed me to successfully make luigi and boser jump using the @ keyframes "transform" method. 
+ - I then focused on the hover button and when the user hovers over the clickable buttons on my make shift keyboard which I assigned as links in HTML. 
+ 
+ JS
+ 
  - 
 
 if you would like to run this program locally...
@@ -48,16 +64,3 @@ if you would like to run this program locally...
 - open your terminal on your computer and clone the repository on the destination folder of your choice. 
 -Once complete then "cd" into the folder and with the command "open index.html" this will open the file locally and you can run the application.
 -This application will run best in google chrome. 
-
-
-In hangman the word to guess is represented by a row of dashes, representing each letter of the word. 
-In most variants, proper nouns, such as names, places, and brands, are not allowed. 
-Slang words, sometimes referred to as informal or shortened words, are also not allowed. 
-If the guessing player suggests a letter which occurs in the word, the other player writes it in all its correct positions. 
-If the suggested letter or number does not occur in the word, the other player draws one element of a hanged man stick figure as a tally mark.
-
-The player guessing the word may, at any time, attempt to guess the whole word. 
-If the word is correct, the game is over and the guesser wins. 
-Otherwise, the other player may choose to penalize the guesser by adding an element to the diagram. 
-On the other hand, if the other player makes enough incorrect guesses to allow his opponent to complete the diagram, the game is also over, this time with the guesser losing. 
-However, the guesser can also win by guessing all the letters or numbers that appears in the word, thereby completing the word, before the diagram is completed.
