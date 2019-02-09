@@ -111,6 +111,26 @@ body {
   right: 685px;
 }
 
+#torso {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 126px;
+  right: 640px;
+}
+
+#right-leg {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 115px;
+  right: 630px;
+}
+
 .luigi {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;

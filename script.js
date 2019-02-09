@@ -71,7 +71,23 @@ for (let i = 0; i < letters.length; i++) {
       document.getElementById("left-arm").innerHTML =
         "<img src='./imgs/Left-Arm.png' />";
     }
+
+    if (counter === 4) {
+      document.getElementById("right-arm").innerHTML =
+        "<img src='./imgs/right-arm.png' />";
+    }
+
+    if (counter === 5) {
+      document.getElementById("left-leg").innerHTML =
+        "<img src='./imgs/left-leg.png' />";
+    }
+
     if (counter === 6) {
+      document.getElementById("right-leg").innerHTML =
+        "<img src='./imgs/right-leg.png' />";
+    }
+
+    if (counter === 7) {
       alert("Game Over!");
       newPrompt();
     }
