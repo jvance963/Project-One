@@ -54,8 +54,24 @@ for (let i = 0; i < letters.length; i++) {
       ).innerText = userClick;
     }
 
-    counter = counter + 1;
-    if (counter === 5) {
+    if (emptyArray.length < 1) {
+      counter = counter + 1;
+      console.log(counter);
+    }
+    if (counter === 1) {
+      document.getElementById("head").innerHTML =
+        "<img src='./imgs/Mario-Head.png' />";
+    }
+    if (counter === 2) {
+      document.getElementById("torso").innerHTML =
+        "<img src='./imgs/Torso.png' />";
+    }
+
+    if (counter === 3) {
+      document.getElementById("left-arm").innerHTML =
+        "<img src='./imgs/Left-Arm.png' />";
+    }
+    if (counter === 6) {
       alert("Game Over!");
       newPrompt();
     }
