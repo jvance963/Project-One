@@ -8,6 +8,10 @@ header {
   width: 100%;
 }
 
+.gameWindow {
+  max-width: 1500px;
+  min-width: 100px;
+}
 .letters {
   font-family: "Press Start 2P", cursive;
   border: 3px solid black;
@@ -102,50 +106,30 @@ body {
 }
 
 #head {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 175px;
   right: 680px;
 }
 
 #torso {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 175px;
   right: 680px;
 }
 
 #right-arm {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 175px;
   right: 680px;
 }
 
 #left-arm {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 175px;
   right: 680px;
 }
 
 #right-leg {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 175px;
   right: 680px;
@@ -154,8 +138,6 @@ body {
 #left-leg {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 175px;
   right: 680px;
