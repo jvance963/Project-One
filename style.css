@@ -34,14 +34,6 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.newWord {
-  font-family: "Press Start 2P", cursive;
-  font-size: auto;
-  position: absolute;
-  bottom: 100px;
-  right: 610px;
-}
-
 #letters {
   font-family: "Press Start 2P", cursive;
   font-size: 15px;
