@@ -108,7 +108,7 @@ body {
   justify-content: center;
   position: absolute;
   top: 175px;
-  right: 685px;
+  right: 680px;
 }
 
 #torso {
@@ -117,18 +117,48 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 126px;
-  right: 640px;
+  top: 175px;
+  right: 680px;
 }
 
-#right-leg {
+#right-arm {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 115px;
-  right: 630px;
+  top: 175px;
+  right: 680px;
+}
+
+#left-arm {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 175px;
+  right: 680px;
+}
+
+#left-leg {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 175px;
+  right: 680px;
+}
+
+#left-leg {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 175px;
+  right: 680px;
 }
 
 .luigi {
